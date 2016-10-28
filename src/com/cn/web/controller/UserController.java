@@ -21,7 +21,7 @@ public class UserController {
 	@RequestMapping("login")
 	public ModelAndView login(User user,HttpServletRequest request){
 		HttpSession session=request.getSession();
-		
+		//hahahaha
 		user=this.userService.login(user);
 		if(user!=null){
 			session.setAttribute("user", user);
@@ -40,7 +40,7 @@ public class UserController {
 	}
 	@RequestMapping("succ")
 	public String succ(String userName){
-		System.out.println("³É¹¦ÁË");
+		System.out.println("ï¿½É¹ï¿½ï¿½ï¿½");
 		return "main";
 	}
 	@RequestMapping("fail")
